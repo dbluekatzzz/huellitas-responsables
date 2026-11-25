@@ -1,0 +1,22 @@
+HUELLITAS RESPONSABLES — VERSIÓN PWA
+
+Contenido:
+- index.html, style.css y script.js: aplicación.
+- logo.png: logo original.
+- manifest.json: nombre, iconos y configuración de instalación.
+- service-worker.js: caché para abrir la aplicación sin conexión después de la primera visita.
+- icons/: iconos de instalación para Android.
+
+IMPORTANTE:
+Para instalarla en Android como aplicación, primero debe publicarse en un hosting con HTTPS (por ejemplo, GitHub Pages). Abrir index.html directamente desde los archivos del teléfono no permite instalar una PWA.
+
+PUBLICAR CON GITHUB PAGES:
+1. Inicia sesión en GitHub y crea un repositorio nuevo.
+2. Sube todos los archivos y la carpeta icons de este proyecto (no subas solamente el ZIP).
+3. En el repositorio abre Settings > Pages.
+4. En Build and deployment selecciona Deploy from a branch, elige la rama main y la carpeta / (root), y guarda.
+5. Espera a que GitHub Pages genere la dirección HTTPS.
+6. Abre esa dirección en Chrome desde Android. En el menú de Chrome elige Instalar aplicación o Añadir a pantalla de inicio.
+
+DATOS:
+Los registros actuales usan localStorage y se guardan en el navegador/dispositivo donde se capturan. No se sincronizan automáticamente entre computadora y celular.
